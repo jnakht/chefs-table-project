@@ -1,0 +1,95 @@
+{
+    "recipes": [
+      {
+        "recipe_id": 1,
+        "recipe_name": "Garlic Butter Chicken",
+        "recipe_image": "https://i.ibb.co.com/G31dXwy0/peter-pham-v5y-Vy3-Ih-SRU-unsplash.jpg",
+        "short_description": "Juicy chicken cooked in a rich garlic butter sauce.",
+        "ingredients": ["550 g chicken", "120 ml soy sauce", "4 cloves garlic", "2 tbsp butter", "1 tbsp olive oil", "1 tsp black pepper"],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+      },
+      {
+        "recipe_id": 2,
+        "recipe_name": "Spaghetti Carbonara",
+        "recipe_image": "https://i.ibb.co.com/zWNxMybh/zoran-borojevic-5-FECW242og-unsplash.jpg",
+        "short_description": "A creamy and delicious Italian pasta dish with bacon and cheese.",
+        "ingredients": ["200 g spaghetti", "100 g bacon", "2 large eggs", "50 g parmesan cheese", "2 cloves garlic", "1 tsp black pepper"],
+        "preparing_time": "25 min",
+        "calories": "400 calories"
+      },
+      {
+        "recipe_id": 3,
+        "recipe_name": "Vegetable Stir Fry",
+        "recipe_image": "https://i.ibb.co.com/tpYwyPZQ/pexels-skyler-ewing-266953-10695967.jpg",
+        "short_description": "A quick and healthy stir-fry packed with colorful veggies.",
+        "ingredients": ["1 red bell pepper", "1 green bell pepper", "200 g broccoli", "100 g carrots", "2 tbsp soy sauce", "1 tbsp sesame oil"],
+        "preparing_time": "20 min",
+        "calories": "250 calories"
+      },
+      {
+        "recipe_id": 4,
+        "recipe_name": "Grilled Salmon with Lemon",
+        "recipe_image": "https://i.ibb.co.com/QjYdGxxW/pexels-dana-tentis-118658-262959.jpg",
+        "short_description": "Delicious grilled salmon topped with lemon butter sauce.",
+        "ingredients": ["400 g salmon", "2 tbsp olive oil", "1 lemon", "2 cloves garlic", "1 tsp black pepper", "1 tsp salt"],
+        "preparing_time": "35 min",
+        "calories": "350 calories"
+      },
+      {
+        "recipe_id": 5,
+        "recipe_name": "Mushroom Risotto",
+        "recipe_image": "https://i.ibb.co.com/8g1Y76NX/pexels-jankao-11190139.jpg",
+        "short_description": "A creamy and flavorful risotto with fresh mushrooms.",
+        "ingredients": ["400 g arborio rice", "200 g mushrooms", "100 g parmesan cheese", "2 tbsp butter", "1 onion", "2 cloves garlic"],
+        "preparing_time": "40 min",
+        "calories": "380 calories"
+      },
+      {
+        "recipe_id": 6,
+        "recipe_name": "Classic Caesar Salad",
+        "recipe_image": "https://i.ibb.co.com/KjmRyJPC/anna-pelzer-IGf-IGP5-ONV0-unsplash.jpg",
+        "short_description": "A fresh and crunchy Caesar salad with homemade dressing.",
+        "ingredients": ["1 romaine lettuce", "100 g croutons", "50 g parmesan cheese", "2 tbsp Caesar dressing", "1 tsp black pepper", "1 tbsp olive oil"],
+        "preparing_time": "15 min",
+        "calories": "180 calories"
+      },
+      {
+        "recipe_id": 7,
+        "recipe_name": "BBQ Chicken Wings",
+        "recipe_image": "https://i.ibb.co.com/xSdkPDn7/pexels-harry-dona-2338407.jpg",
+        "short_description": "Crispy and flavorful BBQ glazed chicken wings.",
+        "ingredients": ["500 g chicken wings", "200 ml BBQ sauce", "1 tbsp honey", "1 tsp garlic powder", "1 tsp black pepper", "1 tbsp olive oil"],
+        "preparing_time": "45 min",
+        "calories": "420 calories"
+      },
+      {
+        "recipe_id": 8,
+        "recipe_name": "Beef Tacos",
+        "recipe_image": "https://i.ibb.co.com/rGw2ff7k/pexels-cristian-rojas-7613563.jpg",
+        "short_description": "Mexican-style beef tacos with fresh toppings.",
+        "ingredients": ["300 g ground beef", "6 taco shells", "1 onion", "1 tomato", "50 g cheddar cheese", "2 tbsp taco seasoning"],
+        "preparing_time": "30 min",
+        "calories": "370 calories"
+      },
+      {
+        "recipe_id": 9,
+        "recipe_name": "Chocolate Brownies",
+        "recipe_image": "https://i.ibb.co.com/1G30hJr5/pexels-jess-vide-6390679.jpg",
+        "short_description": "Rich and fudgy chocolate brownies with a crispy crust.",
+        "ingredients": ["200 g dark chocolate", "150 g butter", "100 g sugar", "2 large eggs", "100 g flour", "1 tsp vanilla extract"],
+        "preparing_time": "40 min",
+        "calories": "450 calories"
+      },
+      {
+        "recipe_id": 10,
+        "recipe_name": "Avocado Toast",
+        "recipe_image": "https://i.ibb.co.com/35xFRZY0/pexels-wendywei-1656685.jpg",
+        "short_description": "A simple and nutritious avocado toast with seasonings.",
+        "ingredients": ["2 slices whole-grain bread", "1 ripe avocado", "1 tsp lemon juice", "1 tsp olive oil", "1/2 tsp salt", "1/2 tsp black pepper"],
+        "preparing_time": "10 min",
+        "calories": "220 calories"
+      }
+    ]
+  }
+  
