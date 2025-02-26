@@ -1,5 +1,6 @@
 
 import './App.css'
+import './index.css'
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
@@ -7,9 +8,16 @@ function App() {
 
   return (
     <>
-        <h1 className='text-4xl text-red-500 font-bold'>hello world </h1>
-        <h3>the world is fine but not world</h3>
-        <Navbar></Navbar>
+        
+        <header className='w-[90vw] lg:w-[80%] mx-auto font-lexend mt-8'>
+            <Navbar></Navbar>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
     </>
   )
 }
