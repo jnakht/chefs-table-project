@@ -31,7 +31,7 @@ const Navbar = () => {
       <li><a>Search</a></li>
       </ul>
     </div>
-    <a className=" text-[#150B2B]  text-xs lg:text-3xl font-normal lg:font-bold border-2 border-red-500">Recipe Calories</a>
+    <a className=" text-[#150B2B]  text-xs lg:text-3xl font-normal lg:font-bold ">Recipe Calories</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[#150B2B] text-base font-normal">
@@ -42,7 +42,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end flex gap-4 flex-1">
-    <div className='flex border-2 border-red-500 w-full lg:w-[260px] bg-[#150B2B] bg-opacity-5 h-[40px]  justify-between items-center gap-3 rounded-[50px] pt-3 pb-3 pl-5 pr-5'>
+    <div className='flex  w-full lg:w-[260px] bg-[#150B2B] bg-opacity-5 h-[40px]  justify-between items-center gap-3 rounded-[50px] pt-3 pb-3 pl-5 pr-5'>
     <IoIosSearch className='text-4xl' />
     <input type="text"  placeholder="search" className=" w-full max-w-xs border-none outline-none bg-[#150B2B] bg-opacity-0" />
     
