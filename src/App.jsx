@@ -16,6 +16,19 @@ function App() {
         .then(res => res.json())
         .then(data => setAllRecipes(data))
     } ,[])
+
+    const [wantToCooks, setWantToCooks] = useState([]);
+    const handleWantToCook = (wantToCook) => {
+      const newList = [...wantToCooks, wantToCook];
+      setWantToCooks(newList);
+    }
+
+    const [currentlyCookings, setCurrentlyCookings] = useState([]);
+    const handlePreparing = (currentlyCooking) => {
+      const newList = [...currentlyCookings, currentlyCooking];
+      setCurrentlyCookings(newList);
+      console.log('clicked')
+    }
   return (
     <>
         
@@ -29,8 +42,8 @@ function App() {
                     <OurRecipes></OurRecipes>
               </section>
               {/* dynamic section */}
-              <section>
-                      <Recipes allRecipes={allRecipes}></Recipes>
+              <section className='w-[90vw] lg:w-[80%] mx-auto mb-[100px]'>
+                      <Recipes allRecipes={allRecipes} handleWantToCook={handleWantToCook} wantToCooks={wantToCooks} handlePreparing={handlePreparing} currentlyCookings={currentlyCookings}></Recipes>
               </section>
         </main>
         <footer>
