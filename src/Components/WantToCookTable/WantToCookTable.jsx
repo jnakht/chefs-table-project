@@ -1,7 +1,8 @@
 
 
 const WantToCookTable = ({recipe, idx, handlePreparing}) => {
-    const {recipe_name, preparing_time, calories} = recipe;
+    const {recipe_name, preparing_time, calories, recipe_id} = recipe;
+    
     return (
         <tr>
             <td>{idx+1}</td>

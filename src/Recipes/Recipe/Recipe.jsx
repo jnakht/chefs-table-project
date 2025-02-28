@@ -57,7 +57,10 @@ const Recipe = ({ recipe, handleWantToCook }) => {
                                 {calories} calories
                             </div>
                         </div>
-                        <button onClick={() => handleWantToCook(recipe)} className='btn bg-[#0BE58A] hover:bg-slate-500 pl-3 pr-3 pt-3 pb-3 h-[56px] rounded-[50px] w-[170px] text-lg font-medium'>Want to Cook</button>
+                        <button onClick={(e) => {
+                            handleWantToCook(recipe);
+                            e.target.disabled = true;
+                        }} className='btn bg-[#0BE58A] hover:bg-slate-500 pl-3 pr-3 pt-3 pb-3 h-[56px] rounded-[50px] w-[170px] text-lg font-medium disabled:bg-black disabled:text-white'>Want to Cook</button>
                     </div>
                 </div>
             </div>
