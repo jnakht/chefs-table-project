@@ -1,3 +1,4 @@
+import CurrentlyCooking from "../../Components/CurrentlyCooking/CurrentlyCooking";
 import WantToCookTable from "../../Components/WantToCookTable/WantToCookTable";
 import Recipe from "../Recipe/Recipe";
 
@@ -34,7 +35,20 @@ const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, cu
                     <div>
                         <h1>Currently cooking: {currentlyCookings.length}</h1>
                     </div>
-                    <div></div>
+                    <div>
+                        <table>
+                             <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Time</th>
+                                <th>Calories</th>
+                                
+                            </tr>
+                            {
+                                 currentlyCookings.map((recipe, idx) => <CurrentlyCooking idx={idx} recipe={recipe}></CurrentlyCooking>)
+                             }
+                        </table>
+                    </div>
                     <div></div>
             </div>
         </div>

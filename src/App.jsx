@@ -28,6 +28,18 @@ function App() {
       const newList = [...currentlyCookings, currentlyCooking];
       setCurrentlyCookings(newList);
       console.log('clicked')
+
+      // remove it from the wantToCooks
+      const newWantToCooks = [];
+        wantToCooks.map(recipe => {
+        console.log("this is the recipe to remove: ", recipe);
+        console.log(recipe.recipe_id, currentlyCooking.recipe_id);
+        if (recipe.recipe_id !== currentlyCooking.recipe_id) {
+          newWantToCooks.push(recipe);
+        }
+      });
+      setWantToCooks(newWantToCooks);
+      console.log('new want to cooks : ', newWantToCooks);
     }
   return (
     <>
