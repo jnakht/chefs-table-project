@@ -6,7 +6,7 @@ import Recipe from "../Recipe/Recipe";
 const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, currentlyCookings}) => {
     console.log('all recipes type: ',typeof allRecipes)
     return (
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row gap-6 border-2 border-red-500">
             {/* left part */}
             <div className="grid grid-cols-2 gap-6">
                 {
@@ -14,39 +14,49 @@ const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, cu
                 }
             </div>
             {/* right part */}
-            <div>
+            <div className="flex-1 border border-solid rounded-2xl border-[#28282833] pt-8 pb-8 max-h-max ">
                     <div>
-                        <h1>Want to cook: {wantToCooks.length}</h1>
+                        <h1 className="text-[#282828] font-lexend text-2xl font-semibold text-center mb-2">Want to cook: {wantToCooks.length}</h1>
+                        <hr className="w-[50%] mx-auto mb-6 border border-solid border-gray-500" />
                     </div>
                     <div>
-                        <table>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Time</th>
-                                <th>Calories</th>
-                                <th></th>
+                        <table className="text-[#878787] font-firaSans text-base font-medium table-auto ml-3 mr-3">
+                            <thead>
+                            <tr className="">
+                                <th className=" py-4"></th>
+                                <th className="px-2 py-4">Name</th>
+                                <th className="px-2 py-4">Time</th>
+                                <th className="px-2 py-4">Calories</th>
+                                <th className=" py-4"></th>
                             </tr>
+                            </thead>
+                            <tbody>
                             {
                                 wantToCooks.map((recipe, idx) => <WantToCookTable recipe={recipe} idx={idx} handlePreparing={handlePreparing}></WantToCookTable>)
                             }
+                            </tbody>
                         </table>
                     </div>
                     <div>
-                        <h1>Currently cooking: {currentlyCookings.length}</h1>
+                        <h1 className="text-[#282828] font-lexend text-2xl font-semibold text-center mb-2">Currently cooking: {currentlyCookings.length}</h1>
+                        <hr className="w-[50%] mx-auto mb-6 border border-solid border-gray-500" />
                     </div>
                     <div>
-                        <table>
-                             <tr>
+                        <table className="text-[#878787] font-firaSans text-base font-medium table-fixed ml-3 mr-3">
+                             <thead>
+                                 <tr>
                                 <th></th>
-                                <th>Name</th>
-                                <th>Time</th>
-                                <th>Calories</th>
+                                <th className="px-2 py-4">Name</th>
+                                <th className="px-2 py-4">Time</th>
+                                <th className="px-2 py-4">Calories</th>
                                 
-                            </tr>
-                            {
+                                 </tr>
+                             </thead>
+                           <tbody>
+                           {
                                  currentlyCookings.map((recipe, idx) => <CurrentlyCooking idx={idx} recipe={recipe}></CurrentlyCooking>)
                              }
+                           </tbody>
                         </table>
                     </div>
                     <div></div>

@@ -5,9 +5,9 @@ const CurrentlyCooking = ({recipe, idx}) => {
     return (
         <tr>
             <td>{idx+1}</td>
-            <td>{recipe_name}</td>
-            <td>{preparing_time} min</td>
-            <td>{calories} calories</td>
+            <td className="px-2 py-4">{recipe_name}</td>
+            <td className="px-2 py-4">{preparing_time} min</td>
+            <td className="px-2 py-4">{calories} calories</td>
         </tr>
     );
 };
