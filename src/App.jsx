@@ -24,6 +24,8 @@ function App() {
     }
 
     const [currentlyCookings, setCurrentlyCookings] = useState([]);
+    const [totalTime, setTotalTime] = useState(0);
+    const [totalCalories, setTotalCalories] = useState(0);
     const handlePreparing = (currentlyCooking) => {
       const newList = [...currentlyCookings, currentlyCooking];
       setCurrentlyCookings(newList);
@@ -38,8 +40,14 @@ function App() {
           newWantToCooks.push(recipe);
         }
       });
+      // set to the currently cooking
       setWantToCooks(newWantToCooks);
-      console.log('new want to cooks : ', newWantToCooks);
+      // console.log('new want to cooks : ', newWantToCooks);
+
+      // calculate total spent time
+      setTotalTime(totalTime + currentlyCooking.preparing_time);
+      // calculate total calories
+      setTotalCalories(totalCalories + currentlyCooking.calories);
     }
   return (
     <>
@@ -55,7 +63,7 @@ function App() {
               </section>
               {/* dynamic section */}
               <section className='w-[90vw] lg:w-[80%] mx-auto mb-[100px]'>
-                      <Recipes allRecipes={allRecipes} handleWantToCook={handleWantToCook} wantToCooks={wantToCooks} handlePreparing={handlePreparing} currentlyCookings={currentlyCookings}></Recipes>
+                      <Recipes allRecipes={allRecipes} handleWantToCook={handleWantToCook} wantToCooks={wantToCooks} handlePreparing={handlePreparing} currentlyCookings={currentlyCookings} totalTime={totalTime} totalCalories={totalCalories}></Recipes>
               </section>
         </main>
         <footer>

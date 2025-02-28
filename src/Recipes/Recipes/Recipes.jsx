@@ -1,9 +1,9 @@
 import CurrentlyCooking from "../../Components/CurrentlyCooking/CurrentlyCooking";
 import WantToCookTable from "../../Components/WantToCookTable/WantToCookTable";
 import Recipe from "../Recipe/Recipe";
+import '../../index.css'
 
-
-const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, currentlyCookings}) => {
+const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, currentlyCookings, totalTime, totalCalories}) => {
     console.log('all recipes type: ',typeof allRecipes)
     return (
         <div className="flex flex-col lg:flex-row gap-6 border-2 border-red-500">
@@ -59,7 +59,16 @@ const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, cu
                            </tbody>
                         </table>
                     </div>
-                    <div></div>
+                    <div className="flex justify-end items-start gap-4 text-[#282828CC] font-lexend text-base font-semibold">
+                        <div className="max-w-[120px]">
+                            <h3>Total Time = 
+                            {totalTime} minutes</h3>
+                        </div>
+                        <div className="max-w-[120px]">
+                            <h3>Total Calories = 
+                            {totalCalories} calories</h3>
+                        </div>
+                    </div>
             </div>
         </div>
     );
