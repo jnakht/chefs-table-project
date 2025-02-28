@@ -6,9 +6,9 @@ import '../../index.css'
 const Recipes = ({allRecipes, handleWantToCook, wantToCooks, handlePreparing, currentlyCookings, totalTime, totalCalories}) => {
     console.log('all recipes type: ',typeof allRecipes)
     return (
-        <div className="flex flex-col lg:flex-row gap-6 border-2 border-red-500">
+        <div className="flex flex-col lg:flex-row gap-6 ">
             {/* left part */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {
                     allRecipes.map(recipe => <Recipe recipe={recipe} handleWantToCook={handleWantToCook}></Recipe>)
                 }
